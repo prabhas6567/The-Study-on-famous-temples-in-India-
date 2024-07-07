@@ -1,0 +1,31 @@
+/* style.css */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center; 
+  }
+  h1{
+    background-color: rgb(205, 215, 173);
+  }
+  #news-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: rgb(193, 220, 219)
+  };
+
+  .news-item {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #c19898;
+    border-radius: 20px;
+    width: 300px;
+     }
+  
+  .news-item:hover {
+    transform:scale(1.2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+ button:hover{
+  background-color: rgb(138, 136, 206);
+  cursor: pointer;
+ }

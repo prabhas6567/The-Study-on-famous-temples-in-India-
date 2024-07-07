@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket Price Generator</title>
+    <link rel="stylesheet" href="ticket.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Ticket Price Generator</h1>
+        <form id="ticketForm">
+            <label for="sourceState">Source State:</label>
+            <select id="sourceState" name="sourceState" onchange="populateDistricts('source')">
+                <option value="">Select State</option>
+                <option value="State1">State1</option>
+                <option value="State2">State2</option>
+                <option value="State3">State3</option>
+                <option value="State4">State4</option>
+                <option value="State5">State5</option>
+                <option value="State6">State6</option>
+                <option value="State7">State7</option>
+                <option value="State8">State8</option>
+                <!-- Add more states as needed -->
+            </select>
+
+            <label for="sourceDistrict">Source District:</label>
+            <select id="sourceDistrict" name="sourceDistrict">
+                <option value="">Select District</option>
+            </select>
+
+            <label for="destinationState">Destination State:</label>
+            <select id="destinationState" name="destinationState" onchange="populateDistricts('destination')">
+                <option value="">Select State</option>
+                <option value="State1">State1</option>
+                <option value="State2">State2</option>
+                <option value="State3">State3</option>
+                <option value="State4">State4</option>
+                <option value="State5">State5</option>
+                <option value="State6">State6</option>
+                <option value="State7">State7</option>
+                <option value="State8">State8</option>
+                <!-- Add more states as needed -->
+            </select>
+
+            <label for="destinationDistrict">Destination District:</label>
+            <select id="destinationDistrict" name="destinationDistrict">
+                <option value="">Select District</option>
+            </select>
+
+            <label for="transportation">Transportation Type:</label>
+            <select id="transportation" name="transportation">
+                <option value="bus">Bus</option>
+                <option value="train">Train</option>
+                <option value="flight">Flight</option>
+            </select>
+
+            <button type="button" onclick="generateTicketPrice()">Get Ticket Price</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="ticket.js"></script>
+</body>
+</html>

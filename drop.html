@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dropdown Box with Hyperlinks</title>
+</head>
+<body>
+
+<h2>Choose a Website:</h2>
+
+<!-- Dropdown Box -->
+<select onchange="window.open(this.options[this.selectedIndex].value,'_blank')">
+    <option value="" disabled selected>Select a Website</option>
+    <option value="https://www.example1.com">Example 1</option>
+    <option value="https://www.example2.com">Example 2</option>
+    <option value="https://www.example3.com">Example 3</option>
+</select>
+
+</body>
+</html>
