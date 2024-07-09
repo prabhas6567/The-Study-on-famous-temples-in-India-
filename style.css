@@ -243,3 +243,118 @@ ul{
 .temple-item:hover {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
+@media only screen and (max-width: 768px) {
+  .nav {
+     flex-direction: column;
+   }
+  .nav ul {
+     flex-direction: column;
+   }
+  .nav li {
+     margin-right: 0;
+   }
+  .search-input {
+     width: 100%;
+   }
+  .temple {
+     width: 100%;
+     margin: 10px;
+   }
+  .footer-col {
+     margin-bottom: 10px;
+   }
+ }
+ /* Tablet Devices */
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  /* Header Styles */
+  header {
+    padding: 2em;
+  }
+  
+  /* Nav Bar Styles */
+ .nav {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+ .nav ul {
+    flex-direction: row;
+  }
+  
+ .nav li {
+    margin-right: 30px;
+  }
+  
+ .search-input {
+    width: 250px;
+  }
+  
+  /* Main Styles */
+  main {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+ .temple {
+    width: calc(50% - 20px);
+    margin: 20px;
+  }
+  
+  /* Footer Styles */
+ .footer {
+    padding: 30px;
+  }
+  
+ .footer-col {
+    margin-bottom: 30px;
+  }
+  
+  /* Adjusting the layout of the temple sections */
+ .temple img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+ .temple h3 {
+    font-size: 24px;
+    margin-top: 10px;
+  }
+  
+ .temple p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  /* Adjusting the layout of the footer columns */
+ .footer-col {
+    width: calc(25% - 20px);
+    margin: 20px;
+  }
+  
+ .footer-col h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+ .footer-col ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+ .footer-col li {
+    margin-bottom: 10px;
+  }
+  
+ .footer-col a {
+    color: #337ab7;
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+  
+ .footer-col a:hover {
+    color: #23527c;
+  }
+}
